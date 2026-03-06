@@ -36,6 +36,30 @@ namespace Aula1
             Console.WriteLine(idade);
 
             Console.Write(nome2);
+
+
+            using System;
+
+namespace MeuPrimeiroPrograma
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Mostra uma mensagem na tela
+            Console.WriteLine("Olá! Bem-vindo ao mundo do C#.");
+
+            // Pede para o usuário digitar algo
+            Console.Write("Qual é o seu nome? ");
+            
+            // Lê o que o usuário digitou e guarda na variável 'nome'
+            string nome = Console.ReadLine();
+
+            // Usa a variável para dar um cumprimento personalizado
+            Console.WriteLine($"Prazer em conhecer você, {nome}!");
+        }
+    }
+}
         }
     }
 }
