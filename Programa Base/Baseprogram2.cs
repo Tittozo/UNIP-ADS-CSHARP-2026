@@ -36,9 +36,11 @@ namespace Aula1
             Console.WriteLine(idade);
 
             Console.Write(nome2);
+        }
+    }
+}
 
-
-            using System;
+using System;
 
 namespace MeuPrimeiroPrograma
 {
@@ -60,6 +62,36 @@ namespace MeuPrimeiroPrograma
         }
     }
 }
+
+
+using System; // Importa as ferramentas básicas do sistema
+
+namespace MeuPrimeiroProjeto
+{
+    class Program
+    {
+        // O "Main" é o ponto de entrada. Tudo começa por aqui!
+        static void Main(string[] args)
+        {
+            // 1. O computador exibe uma mensagem
+            Console.WriteLine("Olá! Eu sou o seu computador. Qual é o seu nome?");
+
+            // 2. O computador cria uma "caixa" (variável) para guardar o que você digitar
+            string nomeUsuario = Console.ReadLine();
+
+            // 3. O computador processa e responde usando o que guardou
+            Console.WriteLine("É um prazer te conhecer, " + nomeUsuario + "!");
+
+            // 4. Um pequeno cálculo para mostrar a lógica
+            Console.WriteLine("Em que ano você nasceu?");
+            int anoNascimento = int.Parse(Console.ReadLine());
+            int idade = 2026 - anoNascimento;
+
+            Console.WriteLine("Entendi! Então você tem (ou vai fazer) " + idade + " anos.");
+
+            // 5. Evita que o programa feche sozinho imediatamente
+            Console.WriteLine("\nPressione qualquer tecla para sair...");
+            Console.ReadKey();
         }
     }
 }
