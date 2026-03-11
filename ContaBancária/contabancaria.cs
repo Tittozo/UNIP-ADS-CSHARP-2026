@@ -1,4 +1,4 @@
-using System.Reflection.Metadata.Ecma335;
+using System;
 
 namespace ContaBancária
 {
@@ -15,6 +15,16 @@ namespace ContaBancária
             double saldoC2 = 3400;
 
             saldoC1 = Depósito(saldoC1, 500);
+            saldoC1 = Depósito(saldoC1, 200);
+            saldoC1 = Saque(saldoC1, 350);
+
+            saldoC1 = Depósito(saldoC2, 50);
+            saldoC1 = Depósito(saldoC2, 100);
+            saldoC1 = Saque(saldoC2, 450);
+
+            Console.WriteLine($"Nome do Titular: {nomeTitularC1}, CPF: {cpfC1}, Saldo: R${saldoC1}");
+            Console.WriteLine($"Nome do Titular: {nomeTitularC2}, CPF: {cpfC2}, SALDO: R${saldoC2}");
+
 
             Console.WriteLine(saldoC1);
 
