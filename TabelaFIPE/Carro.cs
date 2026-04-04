@@ -24,7 +24,6 @@ namespace Fipe
         {
             base.ExibirDados();
             Console.WriteLine($"O número de portas é {NumeroPortas}");
-            Console.WriteLine($"Calcular valor de venda é: {this.CalcularValorVenda()}");
         }
     }
 }
