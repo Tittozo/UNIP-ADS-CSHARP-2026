@@ -28,4 +28,3 @@ namespace Fipe
         public abstract double CalcularValorVenda();
     }
 }
-
