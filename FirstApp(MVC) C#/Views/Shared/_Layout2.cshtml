@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewData["Title"] - PrimeiraAplicação</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
+            <a asp-controller="Home"
+               asp-action="Index"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+
+                <span class="fs-4">
+                    PrimeiraAplicação
+                </span>
+
+            </a>
+
+            <ul class="nav nav-pills gap-2">
+
+                <li class="nav-item">
+                    <a asp-controller="Home"
+                       asp-action="Index"
+                       class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Medico"
+                       asp-action="Index"
+                       class="nav-link active">
+                        Medicos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a asp-controller="Paciente"
+                       asp-action="Index"
+                       class="nav-link active">
+                        Pacientes
+                    </a>
+                </li>
+
+            </ul>
+
+        </header>
+
+        <main>
+            @RenderBody()
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
+
